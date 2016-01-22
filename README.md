@@ -25,4 +25,25 @@ public class MainActivity extends Activity {
 }
 ```
 
+# CentralCheckedTextView
+CentralCheckedTextView可以继承自任何有setdrawableLeft setdrawableRight...的View。
+它是为了解决setdrawableLeft drawable不能居中而定制的。
+eg:
+```xml
+<com.share.MomLove.widets.CentralCheckedTextView
+                        android:id="@+id/video_text_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/video_share"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/color_696969"
+                        tools:text="34" />
+```
+
+
+
 MyBlog: [https://www.apkdv.com](https://www.apkdv.com)
