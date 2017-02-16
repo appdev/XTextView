@@ -83,6 +83,7 @@ public class XTextView extends TextView {
                     Drawable drawableLift = getCompoundDrawables()[DRAWABLE_RIGHT];
                     if (drawableLift != null && event.getRawX() >= (getLeft() + drawableLift.getBounds().width()))
                         mLeftListener.onDrawableLeftClick(this);
+                        return true;
                 }
                 break;
         }
